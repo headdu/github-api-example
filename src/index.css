@@ -1,13 +1,58 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header__container {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebebeb;
+  padding-bottom: 80px;
+  border-bottom: 1px solid grey;
+}
+
+.header__search-container {
+  display: flex;
+  height: 32px;
+  align-items: center;
+}
+
+.header__search-container input {
+  border: none;
+  background: transparent;
+}
+
+.header__search-container input::placeholder {
+  color: grey;
+}
+
+.header__search-icon {
+  background-image: url(https://www.stickpng.com/assets/images/585e4ae1cb11b227491c3393.png);
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+.search-results__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.search-results__error {
+  color: red;
 }
